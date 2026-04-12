@@ -1,0 +1,11 @@
+{
+  "model_params":{
+    "n_estimators": 200,
+    "max_depth": 6,
+    "max_features":"sqrt",
+    "random_state":6
+  },
+  "validation": {
+    "n_splits": 5
+  }
+}
