@@ -9,9 +9,6 @@ logger = logging.getLogger(__name__)
 
 def load_model():
   try:
-    # Path(__file__) = path to predict.py itself
-    #.parent = src/
-    #.parent.parent = project root
     root_directory=Path(__file__).parent.parent.parent
     model_path=root_directory/"model"/"random_forest_model.pkl"
 
