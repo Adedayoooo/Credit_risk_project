@@ -1,2 +1,7 @@
 venv/
 hf_token.txt
+*.csv
+*.pkl
+*.joblib
+data/
+model/
