@@ -42,8 +42,8 @@ def predict(model:random_forest_model.pkl,new_data:np.ndarray)->tuple[int,float]
     logger.error(f"An error occurred:{e}")
     raise
 
-
 #new_data = np.array([[0.99382,34,0,0.693608,4317,7,0,2,0,2,0,0,1,1439]])
-    
-    reshaped_data=new_data.reshape(1,-1)
+
+model=load_model()
+reshaped_data=new_data.reshape(1,-1)
 prediction, probs = predict(model, reshaped_data)
